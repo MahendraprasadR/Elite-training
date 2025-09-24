@@ -1,4 +1,4 @@
-public class Fibonacci {
+public class FibonacciRecursion {
     public static void main(String[] args) {
         int result = fibonaccicheck(7);
         System.out.println(result);

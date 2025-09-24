@@ -1,5 +1,5 @@
 
-public class factorial {
+public class FactorialRecursion {
     public static void main(String[] args) {
         int result = factorialcheck(5);
         System.out.println(result);
