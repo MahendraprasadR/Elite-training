@@ -17,6 +17,5 @@ public class LInearSearchdDupAssignment {
     }
 }
 
-//I am gay
 
 
