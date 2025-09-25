@@ -8,8 +8,18 @@ public class StackImplementation {
         top = -1;
     }
 
+    // Check if stack is full
+    boolean isFull() {
+        return top == size - 1;
+    }
+
+    // Check if stack is empty
+    boolean isEmpty() {
+        return top == -1;
+    }
+
     void push(int d) {
-        if (top == size - 1) {
+        if (isFull()) {
             System.out.println("Stack Overflow!");
         } else {
             top++;
@@ -18,7 +28,7 @@ public class StackImplementation {
     }
 
     void display() {
-        if (top == -1) {
+        if (isEmpty()) {
             System.out.println("Stack is empty");
         } else {
             System.out.print("Stack elements: ");
@@ -33,6 +43,7 @@ public class StackImplementation {
         StackImplementation s = new StackImplementation();
         s.push(10);
         s.push(20);
+        s.push(30);
         s.display();  // Displays the stack
     }
 }
